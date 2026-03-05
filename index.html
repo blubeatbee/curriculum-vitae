@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style/style.css" />
+		<link rel="stylesheet" href="/style/layout.css" />
+
+		<title>Flex-Grid Layout</title>
+	</head>
+	<body>
+		<ul class="a11y-menu">
+			<li>
+				<a href="#main-content"> Skip to main content </a>
+			</li>
+			<!--<li> <a href="#search"> Skip to search </a></li>-->
+		</ul>
+		<div class="b3-banner-wrapper">
+			<div class="b3-banner-fixed"></div>
+		</div>
+		<div class="b3-layout-page">
+			<!--Header-->
+			<header id="header-bar" class="b3-layout-page-item b3-header-sticky">
+				<!--Navigation menu-->
+				<div class="b3-navigation-centre">
+					<nav class="b3-nav-menu">
+						<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-plain" href="#">Page 1</a></div>
+						<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-plain" href="#">Page 2</a></div>
+						<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-plain" href="#">Page 3</a></div>
+						<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-plain" href="#">Page 4</a></div>
+					</nav>
+				</div>
+			</header>
+			<!--Main-->
+			<div class="b3-layout-page-item b3-layout-content">
+				<!--Content-->
+				<main class="b3-layout-content-main" id="main-content">
+					<!--Content header-->
+					<section class="b3-layout-content-main-header b3-content-section">
+						<article class="b3-content-section-item">
+							<h1>Hero Image</h1>
+							<div class="b3-hero-image-wrapper">
+								<div class="b3-hero-image"></div>
+							</div>
+							<h2>Call to Action</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus fugiat nam molestiae, officia temporibus maiores ullam minus praesentium quisquam sequi eligendi voluptates quo voluptate labore. Dolorem optio perferendis iste harum.
+							</p>
+						</article>
+					</section>
+					
+					<!--Table of contents (ToC) panel-->
+					<aside class="b3-layout-content-main-toc b3-toc">
+						<div class="b3-toc-container">
+							<header class="b3-toc-header">Page Contents</header>
+							<nav class="b3-toc-body">
+								<ol class="style-plain link-hover-underline">
+									<li>
+										<a href="#header-1">(Top)</a>
+									</li>
+									<li>
+										<a href="#header-2">My Life</a>
+									</li>
+									<li>
+										<a href="#header-3">My Work</a>
+									</li>
+									<li>
+										<a href="#header-4">My Contact</a>
+									</li>
+								</ol>
+							</nav>
+						</div>
+					</aside>
+					
+					<!--Content body-->
+					<section class="b3-layout-content-main-body b3-content-section">
+						<div class="b3-content-section-item">
+							<h3 id="header-2">My Life</h3>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quaerat beatae id aliquam doloribus fugiat iste quibusdam in provident, dignissimos explicabo quo officiis doloremque est, porro ratione pariatur. Illo, alias?
+							</p>
+						</div>
+						<div class="b3-content-section-item">
+							<h3 id="header-3">My Work</h3>
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni rerum cupiditate, laudantium nulla voluptas, quos nemo, neque temporibus fugit doloribus ex ipsam veritatis. Eaque doloribus, cumque nobis harum ipsam maxime.
+							</p>
+						</div>
+						<div class="b3-content-section-item">
+							<h3 id="header-4">My Contact</h3>
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis culpa ab, laborum neque perferendis unde non amet veritatis in quaerat eius. Neque debitis quidem doloremque obcaecati rerum enim adipisci fugit.
+							</p>
+							<div style="height:100px;"></div>
+						</div>
+					</section>
+				</main>
+
+				<!--Side bar-->
+				<aside id="main-sidebar" class="b3-sidebar b3-layout-content-sidebar">
+					<header class="b3-sidebar-header">Website Navigation</header>
+					<nav class="b3-sidebar-body">
+						<ol class="style-plain link-hover-underline">
+							<li>
+								<details>
+									<summary>List 1</summary>
+									<ol class="style-plain">
+										<li>
+											<details>
+												<summary>List 1.1</summary>
+												<ol class="style-plain">
+													<li>Item</li>
+													<li>Item</li>
+													<li>Item</li>
+													<li>Item</li>
+													<li>Item</li>
+												</ol>
+											</details>
+										</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+									</ol>
+								</details>
+							</li>
+							<li>
+								<details>
+									<summary>List 2</summary>
+									<ol class="style-plain">
+										<li>Item</li>
+										<li>Item</li>
+										<li>Item</li>
+									</ol>
+								</details>
+							</li>
+							<li>
+								<details>
+									<summary>List 3</summary>
+									<ol class="style-plain">
+										<li>Item</li>
+									</ol>
+								</details>
+							</li>
+						</ol>
+					</nav>
+				</aside>
+			</div>
+
+			<!--Footer-->
+			<footer id="footer" class="b3-layout-page-item b3-layout-footer">
+				<div class="b3-layout-footer-container">
+					<div class="b3-footer-logo-wrapper">
+						<a class="b3-footer-logo" href="index.html">
+							<img alt="Logo" src="https://www.svgrepo.com/show/446870/geo.svg" />
+						</a>
+					</div>
+					<div class="b3-layout-footer-container-item">
+						<ul class="style-plain link-hover-underline b3-layout-footer-list">
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+							<li><a href="#">Link 5</a></li>
+						</ul>
+						<ul class="style-plain link-hover-underline b3-layout-footer-list">
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+						</ul>
+						<ul class="style-plain link-hover-underline b3-layout-footer-list">
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="b3-layout-footer-bottom">
+					<p class="style-tiny">
+						Legalese © 2016 bluebeatbee. Text is available under the Example Commons license.
+					</p>
+					<br>
+					<p class="style-tiny">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda vel nisi recusandae rerum aut molestiae minima magnam atque optio odit, natus temporibus, laudantium maiores ea, quos corporis quas officia cumque!
+					</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

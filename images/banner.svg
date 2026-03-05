@@ -1,0 +1,295 @@
+<svg
+	fill="none"
+	viewbox="0 0 600 120"
+	width="100%"
+	height="100%"
+	preserveAspectRatio="xMidYMid meet"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<defs>
+		<linearGradient id="gradient-dark" gradientTransform="rotate(45)">
+			<stop class="stop1" offset="0%" stop-color="var(--color-3)" />
+			<stop class="stop2" offset="50%" stop-color="var(--color-4)" />
+			<stop class="stop3" offset="100%" stop-color="var(--color-3)" />
+		</linearGradient>
+	</defs>
+	<foreignObject width="100%" height="100%">
+		<div id="background" class="flex-centered h-100 w-100" xmlns="http://www.w3.org/1999/xhtml">
+			<svg class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+				<rect id="svg-border" class="w-100 h-100"></rect>
+			</svg>
+			<div id="content" class="h-100 absolute-centered flex-centered">
+				<div id="field" class="flex-centered">
+					<span class="letter h-100 flex-centered">b</span>
+					<span class="letter h-100 flex-centered">l</span>
+					<span class="letter h-100 flex-centered">u</span>
+					<span class="letter h-100 flex-centered">b</span>
+					<span class="letter h-100 flex-centered">e</span>
+					<span class="letter h-100 flex-centered">a</span>
+					<span class="letter h-100 flex-centered">t</span>
+					<span class="letter h-100 flex-centered">b</span>
+					<span class="letter h-100 flex-centered">e</span>
+					<span class="letter h-100 flex-centered">e</span>
+					<div id="cursor"></div>
+				</div>
+				<div id="subtitle" class="absolute-centered w-100">
+					<div class="line w-100"></div>
+					<p>Web &amp; Database Developer</p>
+				</div>
+			</div>
+		</div>
+	</foreignObject>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			color: inherit;
+			outline: none;
+			box-sizing: border-box;
+
+			--color-bg: #010409;
+			--color-txt: #fff;
+			--color-2: #1953b6;
+			--color-3: #1585fd;
+			--color-4: #68d5ff;
+		}
+
+		@media (prefers-color-scheme: light) {
+			* {
+				--color-bg: #fff;
+				--color-txt: #010409;
+				--color-2: #68d5ff;
+				--color-3: #1585fd;
+				--color-4: #1953b6;
+			}
+		}
+
+		.h-100 {
+			height: 100%;
+		}
+		.w-100 {
+			width: 100%;
+		}
+
+		.absolute-centered {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.flex-centered {
+			display: flex;
+			justify-content: center;
+		}
+
+		#background {
+			position: relative;
+			background-color: var(--color-bg);
+			padding: 12px;
+		}
+
+		#svg-border {
+			stroke: url(#gradient-dark);
+			stroke-width: 0.8rem;
+			stroke-linecap: square;
+			stroke-dasharray: 9000;
+			stroke-dashoffset: 1;
+
+			animation: stroke-intro 4s ease-in-out 0.5s 1 normal both;
+		}
+
+		.stop1 {
+			animation: gradient-offset1 4s linear infinite;
+		}
+		.stop2 {
+			animation: gradient-offset2 4s linear infinite;
+		}
+		.stop3 {
+			animation: gradient-offset3 4s linear infinite;
+		}
+
+		@keyframes stroke-intro {
+			0% {
+				stroke-dashoffset: 9000;
+			}
+			100% {
+				stroke-dashoffset: 1;
+			}
+		}
+
+		@keyframes gradient-offset1 {
+			0%,
+			100% {
+				stop-color: var(--color-4);
+				offset: 0%;
+			}
+			50% {
+				stop-color: var(--color-3);
+				offset: 50%;
+			}
+		}
+		@keyframes gradient-offset2 {
+			0%,
+			100% {
+				stop-color: var(--color-2);
+				offset: 50%;
+			}
+			50% {
+				stop-color: var(--color-4);
+				offset: 100%;
+			}
+		}
+		@keyframes gradient-offset3 {
+			0%,
+			100% {
+				stop-color: var(--color-4);
+				offset: 100%;
+			}
+			50% {
+				stop-color: var(--color-3);
+				offset: 0%;
+			}
+		}
+
+		#content {
+			flex-direction: column;
+			width: url(#field);
+		}
+
+		#field {
+			height: 40%;
+			color: var(--color-txt);
+			font-size: 1.75rem;
+			font-weight: 200;
+			font-family: "DejaVu Sans Mono", monospace;
+		}
+
+		.letter {
+			width: fit-content;
+		}
+
+		#field span:nth-child(1) {
+			animation: typing-fx 0.1s steps(1) 2s 1 normal both;
+		}
+		#field span:nth-child(2) {
+			animation: typing-fx 0.1s steps(1) 2.2s 1 normal both;
+		}
+		#field span:nth-child(3) {
+			animation: typing-fx 0.1s steps(1) 2.3s 1 normal both;
+		}
+		#field span:nth-child(4) {
+			animation: typing-fx 0.1s steps(1) 2.5s 1 normal both;
+		}
+		#field span:nth-child(5) {
+			animation: typing-fx 0.1s steps(1) 2.78s 1 normal both;
+		}
+		#field span:nth-child(6) {
+			animation: typing-fx 0.1s steps(1) 2.9s 1 normal both;
+		}
+		#field span:nth-child(7) {
+			animation: typing-fx 0.1s steps(1) 3.02s 1 normal both;
+		}
+		#field span:nth-child(8) {
+			animation: typing-fx 0.1s steps(1) 3.2s 1 normal both;
+		}
+		#field span:nth-child(9) {
+			animation: typing-fx 0.1s steps(1) 3.3s 1 normal both;
+		}
+		#field span:nth-child(10) {
+			animation: typing-fx 0.1s steps(1) 3.43s 1 normal both;
+		}
+		#cursor {
+			background-color: var(--color-txt);
+			height: 1em;
+			width: 0.4rem;
+			margin: 0 0.1em 0.1em 0.1em;
+			opacity: 0;
+			animation:
+				blink 1.8s steps(1, end) 2 forwards,
+				pause 10s steps(1, end) 2s infinite,
+				blink 1.8s steps(1, end) 3.7s infinite;
+		}
+
+		#subtitle {
+			display: flex;
+			flex-direction: column;
+			row-gap: 6px;
+			transform: translate(-50%, 0.4rem);
+		}
+
+		#subtitle p {
+			color: var(--color-4);
+			font-size: 0.9rem;
+			font-family: Tahoma, sans-serif;
+			animation: subtitle-intro 1s ease-out 5s both;
+		}
+		.line {
+			background-color: var(--color-4);
+			height: 2.5px;
+			animation: line-intro 1.2s ease-out 4s both;
+		}
+
+		@keyframes blink {
+			0% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 1;
+			}
+		}
+		@keyframes pause {
+			from, to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes typing-fx {
+			0% {
+				width: 0;
+				opacity: 0;
+			}
+			50% {
+				width: fit-content;
+				opacity: 1;
+			}
+		}
+
+		@keyframes line-intro {
+			from {
+				width: 0%;
+			}
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes subtitle-intro {
+			from {
+				opacity: 0;
+				transform: translateY(-50%);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0%);
+			}
+		}
+
+		@media (prefers-reduced-motion) {
+			* {
+				animation: none;
+			}
+		}
+		@media screen and (min-width:481px) {
+			#field {
+				font-size: 2.5rem;
+			}
+			#subtitle p {
+				font-size: 1.1rem;
+			}
+			#subtitle {
+				transform: translate(-50%, 1rem);
+			}
+		}
+	</style>
+</svg>
