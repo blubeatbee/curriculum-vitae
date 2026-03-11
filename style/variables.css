@@ -1,0 +1,163 @@
+
+/* #region @media screen (min-width) */
+:root {
+	--screen-phone-portrait: 320px;   /* smartphones, iPhone, portrait 480x320 phones */
+	--screen-tablet-portrait: 481px;  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+	--screen-phone-landscape: 641px;  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+	--screen-tablet-landscape: 961px; /* tablet, landscape iPad, lo-res laptops ands desktops */
+	--screen-laptop: 1025px;          /* big landscape tablets, laptops, and desktops */
+	--screen-desktop: 1281px;         /* hi-res laptops and desktops */
+	/* 
+	Source - https://stackoverflow.com/a/7354648
+	Posted by ryanve, modified by community. See post 'Timeline' for change history
+	License - CC BY-SA 4.0 
+	*/
+}
+/* #endregion*/
+
+
+/* #region Basic Pallets */
+:root {
+	color-scheme: light dark;
+
+	--c-primar-75: hsl(197, 100%, 70%);
+	--c-primar-50: hsl(211, 98%, 54%);
+	--c-primar-25: hsl(218, 76%, 41%);
+	--c-primar-alpha-66: hsla(197, 100%, 70%, 0.66);
+	--c-primar-alpha-33: hsla(197, 100%, 70%, 0.33);
+	--c-primar-alpha-00: hsla(197, 100%, 70%, 0);
+
+	--c-second-75: hsl(43, 74%, 75%);
+	--c-second-50: hsl(43, 74%, 50%);
+	--c-second-25: hsl(43, 74%, 33%);
+	--c-second-alpha-66: hsla(43, 100%, 50%, 0.66);
+	--c-second-alpha-33: hsla(43, 100%, 50%, 0.33);
+	--c-second-alpha-00: hsla(43, 100%, 50%, 0);
+
+	--c-accent-50: hsl(359, 100%, 50%);
+	--c-accent-alpha-66: hsla(359, 100%, 50%, 0.66);
+	--c-accent-alpha-33: hsla(359, 100%, 50%, 0.33);
+	--c-accent-alpha-00: hsla(359, 100%, 50%, 0);
+
+	--c-black-w: hsl(218, 80%, 2%);
+	--c-white: hsl(0, 0%, 100%);
+	--c-white-alpha-66: hsla(0, 0%, 100%, 0.66);
+	--c-white-alpha-33: hsla(0, 0%, 100%, 0.33);
+	--c-black: hsl(218, 80%, 2%);
+	--c-black-alpha-66: hsla(0, 0%, 0%, 0.66);
+	--c-black-alpha-33: hsla(0, 0%, 0%, 0.33);
+
+	--c-grey-90: hsl(250, 7%, 97%);
+	--c-grey-80: hsl(250, 7%, 93.5%);
+	--c-grey-60: hsl(250, 7%, 78%);
+	--c-grey-40: hsl(250, 7%, 34%);
+	--c-grey-20: hsl(250, 7%, 19%);
+	--c-grey-10: hsl(250, 7%, 14%);
+	--c-grey-05: hsl(250, 7%, 10%);
+}
+:root {
+	--c-text:            light-dark(var(--c-black), var(--c-white));
+	--c-text-2:          light-dark(var(--c-grey-10), var(--c-grey-80));
+	--c-text-reverse:    light-dark(var(--c-white), var(--c-black));
+	
+	--c-background-1:    light-dark(var(--c-grey-90), var(--c-grey-05));
+	--c-background-2:    light-dark(var(--c-grey-80), var(--c-grey-10));
+
+	--c-menu-background: light-dark(var(--c-grey-60), var(--c-grey-20));
+	--c-menu-border:     light-dark(var(--c-grey-05), var(--c-grey-90));
+	
+	--c-primary:         light-dark(var(--c-primar-50), var(--c-primar-50));
+	--c-secondary:       light-dark(var(--c-second-50), var(--c-second-50));
+	--c-accent:          light-dark(var(--c-accent-50), var(--c-accent-50));
+
+	--c-highlight-light: light-dark(var(--c-white-alpha-66), var(--c-black-alpha-33));
+	--c-highlight-dark:  light-dark(var(--c-black-alpha-33), var(--c-white-alpha-66));
+}
+/* #endregion */
+
+
+/* #region Fonts (family, size, weight) */
+:root {
+	--f-family-head: "Segoe UI", serif;
+	--f-family-text: "Tahoma", sans-serif;
+	--f-family-mono: "Consolas", monospace;
+
+	--f-size-xs:    0.800rem;
+	--f-size-s:     0.875rem;
+	--f-size-m:     1.000rem;
+	--f-size-l:     1.125rem;
+	--f-size-xl:    1.250rem;
+	--f-size-xxl:   1.375rem;
+	--f-size-xxxl:  1.625rem;
+	--f-size-xxxxl: 2.000rem;
+
+	--f-weight-light:   300;
+	--f-weight-regular: 400;
+	--f-weight-bold:    700;
+}
+/* #endregion*/
+
+
+/* #region Z-index position */
+:root {
+	--z-index-0:   0;
+	--z-index-1:  10;
+	--z-index-2:  20;
+	--z-index-3:  30;
+	--z-index-4:  40;
+	--z-index-5:  50;
+	--z-index-6:  60;
+}
+/* #endregion */
+
+
+/* #region Padding / Margin */
+:root {
+	--space-1:  0.1rem;
+	--space-2:  0.2rem;
+	--space-3:  0.3rem;
+	--space-4:  0.4rem;
+	--space-5:  0.5rem;
+	--space-6:  0.6rem;
+	--space-7:  0.7rem;
+	--space-8:  0.8rem;
+	--space-9:  0.9rem;
+	--space-10: 1.0rem;
+	--space-15: 1.5rem;
+	--space-20: 2.0rem;
+
+	--padding-inline-too-wide: max(0rem, calc(50vw - 512.5px));
+	--inline-padding-dynamic-wide: max(0rem, calc(50vw - 512.5px));
+	--padding-inline-footer-too-wide: max(var(--space-20), calc(50vw - 480px));
+}
+/* #endregion */
+
+
+/* #region Height / Width */
+:root {
+	--size-button-min: 24px;
+
+	--height-banner: 10rem;
+	--height-navigation-bar: 4rem;
+	--height-breadcrumb-bar: 0rem;
+	--height-sticky-header: var(--height-navigation-bar);
+	/* --height-sticky-header: calc(var(--navigation-height) + var(--breadcrumb-bar-height));  */
+	/* --height-sticky-header: calc(var(--navigation-height) + var(--breadcrumb-bar-height) + var(--header-banner-height)); */
+
+	--height-minus-header: calc(100vh - var(--height-sticky-header));
+}
+/* #endregion */
+
+
+@media screen and (min-width: 481px) {
+	:root {
+		font-size: 16.5px;
+		--breadcrumb-bar-height: 2rem;
+		--height-breadcrumb-bar: 0rem;
+	}
+}
+@media screen and (min-width: 641px) {
+	:root {
+		font-size: 17px;
+	}	
+}
