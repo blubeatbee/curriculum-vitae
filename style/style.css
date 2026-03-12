@@ -9,6 +9,7 @@
 }
 a {
 	color: inherit;
+	cursor: pointer;
 	font-family: var(--f-family-text);
 	font-size: inherit;
 	font-weight: inherit;
@@ -18,7 +19,8 @@ a {
 }
 body {
 	color: var(--c-text-1);
-	background-color: var(--c-background-1); 
+	background-color: var(--c-background-2);
+	width: 100%;
 }
 button {
 	border-radius: 0;
@@ -28,6 +30,7 @@ button {
 details > summary { cursor: pointer; }
 h1, h2, h3, h4, h5, h6 {
 	color: inherit;
+	cursor: default;
 	font-family: var(--f-family-head);
 	font-weight: inherit;
 }
@@ -37,17 +40,23 @@ h3 { font-size: var(--f-size-xxl) }
 h4 { font-size: var(--f-size-xl) }
 h5 { font-size: var(--f-size-l) }
 h6 { font-size: var(--f-size-m) }
+hr { 
+	border-color: inherit; 
+	border-width: 1px;
+}
 i, img, video {
 	max-width: 100%;
 	height: auto;
 }
 li {
+	cursor: default;
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit; 
 }
 p {
 	color: inherit;
+	cursor: default;
 	font-family: var(--f-family-text);
 	font-size: var(--f-size-m);
 	font-weight: var(--f-weight-regular);
@@ -66,10 +75,10 @@ header.active {
 }
 
 .b3-wrapper__block {
-	padding: var(--space-10) 0;
+	padding: var(--space-8) 0;
 }
 .b3-wrapper__inline {
-	padding: 0 var(--space-10);
+	padding: 0 var(--space-8);
 }
 
 .hover-gradient-bottom:hover {
@@ -107,6 +116,7 @@ ul.link-style-plain, ol.link-style-plain { text-decoration: none; }
 .b3-font-weight-medium  { font-weight: var(--f-weight-medium); }
 .b3-font-weight-bold    { font-weight: var(--f-weight-bold); }
 .b3-font-weight-bolder  { font-weight: var(--f-weight-bolder); }
+
 .b3-size-square-2s { width: 16px; height: 16px; }
 .b3-size-square-xs { width: 24px; height: 24px; }
 .b3-size-square-s  { width: 32px; height: 32px; }
@@ -131,6 +141,28 @@ p.style-text-s, i.style-text-s { font-size: var(--f-size-s); }
 p.style-text-xs, i.style-text-xs { font-size: var(--f-size-xs); }
 
 .style-underline { text-decoration: underline; }
+h1.b3-hr,
+h2.b3-hr,
+h3.b3-hr,
+h4.b3-hr,
+h5.b3-hr,
+h6.b3-hr { border-bottom: 0.1rem solid currentColor; }
+
+.b3-link, .b3-link-external {
+	align-items: center;
+	gap: 0.2rem;
+	max-width: max-content;
+}
+.b3-link:hover, 
+.b3-link-external:hover, 
+.b3-link:active, 
+.b3-link-external:active { color: var(--c-highlight-dark); }
+.b3-link-external:after {
+	display: inline-block;
+	font: 14px/1 FontAwesome;
+	content: "\f08e\200b"/" (external)";
+}
+
 
 header.position-sticky {
 	position: sticky;

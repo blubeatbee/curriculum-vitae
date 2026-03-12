@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/style/layout.css" />
+	<link rel="stylesheet" href="/style/easter-egg.css" />
 	<script src="/scripts/script.js" defer></script>
 	
 	<title>Home | blubeatbee</title>
@@ -20,17 +21,18 @@
 		<!--Header-->
 		<header id="header-bar" class="b3-layout-page-item b3-header-sticky inactive">
 			<!--Navigation menu-->
-			<div class="b3-navigation">
-				<nav class="b3-nav-menu">
-					<div class="b3-nav-menu-link style-inert"><a class="style-none" href="index.html" inert>Home</a></div>
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="portfolio.html">Portfolio</a></div>
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="contact.html">Contact</a></div>
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="#">Page 4</a></div>
-				</nav>
+			<nav class="b3-navigation">
+				<button id="button-secret-1" class="b3-button-square" onclick="activateEasterEgg1()"></button>
+				<ul class="b3-nav-menu">
+					<li class="style-inert"><a class="style-none" href="index.html" inert>Home</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a class="style-none" href="portfolio.html">Portfolio</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a class="style-none" href="contact.html">Contact</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a class="style-none" href="#">Page 4</a></li>
+				</ul>
 				<button id="button-nav-menu" class="b3-button-square" onclick="openNavMenu()">
 					<i class="fa fa-bars style-text-xxxl"></i>
 				</button>
-			</div>
+			</nav>
 		</header>
 		
 		<!--Main-->
@@ -41,7 +43,6 @@
 				<section class="b3-layout-content-main-header b3-content-hero">
 					<div class="b3-hero-image">
 						<div class="b3-hero-content">
-							<h1>My Name Is ALEX COH</h1>
 						</div>
 					</div>
 				</section>
@@ -52,25 +53,30 @@
 						<h1>My Name Is...</h1>
 						<h2>Subtitle</h2>
 						<p>
+							
 						</p>
 					</article>
 					<article class="b3-content-item b3-article-background-left">
-						<h3 id="header-2" class="b3-line-height-2l">
+						<h2 id="header-2" class="b3-line-height-2l">
 							<b class="b3-style-text-larger">B</b>orn to Frontend,
 							<br>
 							<b class="b3-style-font-larger">F</b>orced to Backend.
-						</h3>
+						</h2>
 						<p>
 							Nerd, programmer, and peruser of documentation.
 						</p>
 					</article>
 					<article clas="b3-content-item">
-						<h2>My Skillset<hr></h2>
+						<h2 class="b3-hr">My Skillset</h2>
+						<p>
+							
+						</p>
 						<div class="b3-wrapper__block">
 							<h3> Languages </h3>
 							<ul class="b3-grid-responsive__3-column">
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=cs" />C&#35;</li>
-								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=mysql" />MySQL&nbsp;/ T-SQL</li>
+								<li><img class="b3-size-square-m" src="https://skills.syvixor.com/api/icons?i=sql" />T-SQL</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=mysql" />MySQL</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=js" />JavaScript</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=html" />HTML</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=css" />CSS</li>
@@ -79,35 +85,48 @@
 						<div class="b3-wrapper__block">
 							<h3> Tools & frameworks </h3>
 							<ul class="b3-grid-responsive__3-column">
-								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=dotnet" />.NET&nbsp;/ ASP.NET + EF&nbsp;Core</li>
-								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=visualstudio" />Visual Studio</li>
-								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=vscode" />Visual Studio Code</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=git" />Git </li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=github" />Github</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=dotnet" />.NET&nbsp;/ ASP.NET</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=visualstudio" />Visual Studio</li>
+								<li><img class="b3-size-square-m" src="https://skills.syvixor.com/api/icons?i=sqlserver" />SQL Server</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=vscode" />Visual Studio Code</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=react" />React.js</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=docker" />Docker</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=postman" />Postman</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=figma" />Figma</li>
 							</ul>
 						</div>
 					</article>
 					<article class="b3-content-item b3-article-background-right">
-						<h2>Looking to improve my skills in...<hr></h2>
+						<h2 class="b3-hr">Looking to improve my skills in...</h2>
 						<div class="b3-wrapper__block">
 							<ul class="b3-grid-responsive__3-column">
-								<li><img class="b3-size-square-m" src="https://raw.githubusercontent.com/tandpfun/skill-icons/7f7e691e71aec64e8354bf697835e009d1ad80f8/icons/Java-Light.svg" />Java</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=ts" />TypeScript</li>
+								<li><img class="b3-size-square-m" src="https://raw.githubusercontent.com/tandpfun/skill-icons/7f7e691e71aec64e8354bf697835e009d1ad80f8/icons/Java-Light.svg" />Java</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=vite" />Vite</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=graphql" />GraphQL</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=gitlab" />Gitlab</li>
 							</ul>
 						</div>
 					</article>
-					<article class="b3-content-item b3-article-background-right">
-						<h2>Don't hesitate to reach out!<hr></h2>
+					<article class="b3-content-item b3-article-background-left">
+						<h2 class="b3-hr">Want to reach out?</h2>
+						<p>Find me on these sites:</p>
 						<div class="b3-wrapper__block">
-							<p>Find me on these sites:</p>
 							<ul class="b3-grid-responsive__3-column">
-
+								<li>
+									<a class="b3-link-external" href="https://github.com/bluebeatbee">
+										<i class="fa fa-github fa-lg"></i>
+										<u>Github</u>
+									</a>
+								</li>
+								<li>
+									<a class="b3-link-external" href="https://www.linkedin.com/in/alex1998">
+										<i class="fa fa-linkedin-square fa-lg"></i>
+										<u>LinkedIn</u>
+									</a>
+								</li>
 							</ul>
 						</div>
 					</article>
@@ -117,27 +136,8 @@
 
 		<!--Footer-->
 		<footer id="footer" class="b3-layout-page-item b3-layout-footer">
-			<div class="b3-layout-footer-item b3-flex-footer">
-				<div class="b3-footer-logo-wrapper">
-
-				</div>
-				<ul class="b3-flex-list-colrow style-none">
-					<li>
-						<a class="b3-link-external" href="https://github.com/blubeatbee/">
-							<i class="fa fa-github fa-lg"></i>
-							<u>Github</u>
-						</a>
-					</li>
-					<li>
-						<a class="b3-link-external" href="https://www.linkedin.com/in/alex1998">
-							<i class="fa fa-linkedin-square fa-lg"></i>
-							<u>LinkedIn</u>
-						</a>
-					</li>
-				</ul>
-			</div>
 			<div class="b3-layout-footer-item ">
-				<p class="style-text-xs">
+				<p class="b3-font-size-s">
 					&copy; 2026 bluebeatbee
 				</p> 
 			</div>

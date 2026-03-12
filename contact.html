@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/layout.css" />
+	<link rel="stylesheet" href="/style/easter-egg.css" />
 	<script src="scripts/script.js" defer></script>
 	
 	<title>Contact | blubeatbee</title>
@@ -17,17 +18,18 @@
 		<!--Header-->
 		<header id="header-bar" class="b3-layout-page-item b3-header-sticky inactive">
 			<!--Navigation menu-->
-			<div class="b3-navigation">
-				<nav class="b3-nav-menu">
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="index.html">Home</a></div>
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="portfolio.html">Portfolio</a></div>
-					<div class="b3-nav-menu-link style-inert"><a class="style-none" href="contact.html" inert="">Contact</a></div>
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="misc.html">Page 4</a></div>
-				</nav>
+			<nav class="b3-navigation">
+				<button id="button-secret-1" class="b3-button-square" onclick="activateEasterEgg1()"></button>
+				<ul class="b3-nav-menu">
+					<li class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="index.html">Home</a></li>
+					<li class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="portfolio.html">Portfolio</a></li>
+					<li class="b3-nav-menu-link style-inert"><a class="style-none" href="contact.html" inert="">Contact</a></li>
+					<li class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="misc.html">Page 4</a></li>
+				</ul>
 				<button id="button-nav-menu" class="b3-button-square" onclick="openNavMenu()">
 					<i class="fa fa-bars style-text-xxxl"></i>
 				</button>
-			</div>
+			</nav>
 		</header>
 
 		<!--Main-->
@@ -37,9 +39,6 @@
 				<!--Content header-->
 				<section class="b3-layout-content-main-header b3-content-section">
 					<h1>Hero Image</h1>
-					<div class="b3-hero-wrapper">
-						<div class="b3-hero-image"></div>
-					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus fugiat nam molestiae, officia temporibus maiores ullam minus praesentium quisquam sequi eligendi voluptates quo voluptate labore. Dolorem optio perferendis iste harum.
 					</p>
@@ -62,13 +61,13 @@
 				
 				<!--Content body-->
 				<section class="b3-layout-content-main-body b3-content-section">
-					<article>
+					<article class="b3-content-item">
 						<h2 id="header-2">My Life</h2>
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quaerat beatae id aliquam doloribus fugiat iste quibusdam in provident, dignissimos explicabo quo officiis doloremque est, porro ratione pariatur. Illo, alias?
 						</p>
 					</article>
-					<article>
+					<article class="b3-content-item">
 						<h2 id="header-3">My Work</h2>
 						<div class="b3-carousel">
 							<div class="b3-carousel-card">
@@ -82,7 +81,7 @@
 							</div>
 						</div>
 					</article>
-					<article>
+					<article class="b3-content-item">
 						<h2 id="header-4">My Contact</h2>
 						<p>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis culpa ab, laborum neque perferendis unde non amet veritatis in quaerat eius. Neque debitis quidem doloremque obcaecati rerum enim adipisci fugit.
@@ -94,27 +93,8 @@
 
 		<!--Footer-->
 		<footer id="footer" class="b3-layout-page-item b3-layout-footer">
-			<div class="b3-layout-footer-item b3-flex-footer">
-				<div class="b3-footer-logo-wrapper">
-
-				</div>
-				<ul class="b3-flex-list-colrow style-none">
-					<li>
-						<a class="b3-link-external" href="https://github.com/blubeatbee/">
-							<i class="fa fa-github fa-lg"></i>
-							<u>Github</u>
-						</a>
-					</li>
-					<li>
-						<a class="b3-link-external" href="https://www.linkedin.com/in/alex1998">
-							<i class="fa fa-linkedin-square fa-lg"></i>
-							<u>LinkedIn</u>
-						</a>
-					</li>
-				</ul>
-			</div>
 			<div class="b3-layout-footer-item ">
-				<p class="style-text-xs">
+				<p class="b3-font-size-s">
 					&copy; 2026 bluebeatbee
 				</p> 
 			</div>

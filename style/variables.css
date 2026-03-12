@@ -62,7 +62,7 @@
 	
 	--c-background-1:    light-dark(var(--c-grey-90), var(--c-grey-05));
 	--c-background-2:    light-dark(var(--c-grey-80), var(--c-grey-10));
-	--c-background-alt:  light-dark(var(--c-grey-40), var(--c-grey-80));
+	--c-background-alt:  light-dark(var(--c-black-alpha-66), var(--c-white-alpha-66));
 
 	--c-menu-background: light-dark(var(--c-grey-60), var(--c-grey-20));
 	--c-menu-border:     light-dark(var(--c-grey-05), var(--c-grey-90));
@@ -133,8 +133,11 @@
 	--space-15: 1.5rem;
 	--space-20: 2.0rem;
 
+	
+	/* If the first value is changed, you have to change the third value too */
+	/* Otherwise, contents will get bigger than the body if screen is too wide */
 	--inline-wide-constraint: max(0rem, calc(50vw - 512.5px));
-	--inline-wide-constraint-extra: max(var(--space-20), calc(50vw - 480px));
+	--inline-wide-constraint-extra: max(var(--space-15), calc(50vw - 487px));
 }
 /* #endregion */
 
