@@ -27,7 +27,7 @@ window.addEventListener('scroll', function() {
 
 
 const navMenu = document.querySelector(".b3-nav-menu");
-const navMenuDivs = document.querySelectorAll(".b3-nav-menu-link");
+const navMenuDivs = document.querySelectorAll(".b3-nav-menu > li");
 
 window.addEventListener('resize', function() {
 	
@@ -54,3 +54,6 @@ function openNavMenu() {
 		navMenu.classList.remove("b3-open-menu");
 	}
 };
+function activateEasterEgg1() {
+	alert("Easter egg 1");
+}
