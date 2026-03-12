@@ -22,12 +22,12 @@
 			<!--Navigation menu-->
 			<div class="b3-navigation">
 				<nav class="b3-nav-menu">
-					<div class="b3-nav-menu-link style-inert"><a class="style-plain" href="index.html" inert>Home</a></div>
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-plain" href="portfolio.html">Portfolio</a></div>
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-plain" href="contact.html">Contact</a></div>
-					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-plain" href="#">Page 4</a></div>
+					<div class="b3-nav-menu-link style-inert"><a class="style-none" href="index.html" inert>Home</a></div>
+					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="portfolio.html">Portfolio</a></div>
+					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="contact.html">Contact</a></div>
+					<div class="b3-nav-menu-link hover-gradient-bottom link-hover-highlight"><a class="style-none" href="#">Page 4</a></div>
 				</nav>
-				<button id="button-nav-modal" class="b3-button-square" onclick="openNavMenu()">
+				<button id="button-nav-menu" class="b3-button-square" onclick="openNavMenu()">
 					<i class="fa fa-bars style-text-xxxl"></i>
 				</button>
 			</div>
@@ -38,61 +38,78 @@
 			<!--Content-->
 			<main class="b3-layout-content-main" id="main-content">
 				<!--Content header-->
-				<section class="b3-layout-content-main-header b3-content-section">
-					<h1>Hero Image</h1>
-					<div class="b3-hero-image-wrapper">
-						<div class="b3-hero-image"></div>
+				<section class="b3-layout-content-main-header b3-content-hero">
+					<div class="b3-hero-image">
+						<div class="b3-hero-content">
+							<h1>My Name Is ALEX COH</h1>
+						</div>
 					</div>
-					<h2>Subtitle</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus fugiat nam molestiae, officia temporibus maiores ullam minus praesentium quisquam sequi eligendi voluptates quo voluptate labore. Dolorem optio perferendis iste harum.
-					</p>
 				</section>
-				
-				<!--Table of contents (ToC) panel-->
-				<aside class="b3-layout-content-main-toc b3-toc-wrapper">
-					<div class="b3-toc">
-						<header class="b3-toc-header">Page Contents</header>
-						<nav class="b3-toc-body">
-							<ol class="style-plain link-hover-underline">
-								<li>
-									<a href="">(Top)</a>
-								</li>
-								<li>
-									<a href="#header-2">My Life</a>
-								</li>
-								<li>
-									<a href="#header-3">My Work</a>
-								</li>
-								<li>
-									<a href="#header-4">My Contact</a>
-								</li>
-							</ol>
-						</nav>
-					</div>
-				</aside>
 				
 				<!--Content body-->
 				<section class="b3-layout-content-main-body b3-content-section">
-					<article>
-						<h3 id="header-2">My Life</h3>
+					<article class="b3-content-item">
+						<h1>My Name Is...</h1>
+						<h2>Subtitle</h2>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quaerat beatae id aliquam doloribus fugiat iste quibusdam in provident, dignissimos explicabo quo officiis doloremque est, porro ratione pariatur. Illo, alias?
 						</p>
 					</article>
-					<article class="b3-section-article">
-						<h3 id="header-3">My Work</h3>
-						<div class="b3-carousel">
-							<div class="b3-carousel-card"></div>
-							<div class="b3-carousel-card"></div>
-							<div class="b3-carousel-card"></div>
+					<article class="b3-content-item b3-article-background-left">
+						<h3 id="header-2" class="b3-line-height-2l">
+							<b class="b3-style-text-larger">B</b>orn to Frontend,
+							<br>
+							<b class="b3-style-font-larger">F</b>orced to Backend.
+						</h3>
+						<p>
+							Nerd, programmer, and peruser of documentation.
+						</p>
+					</article>
+					<article clas="b3-content-item">
+						<h2>My Skillset<hr></h2>
+						<div class="b3-wrapper__block">
+							<h3> Languages </h3>
+							<ul class="b3-grid-responsive__3-column">
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=cs" />C&#35;</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=mysql" />MySQL&nbsp;/ T-SQL</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=js" />JavaScript</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=html" />HTML</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=css" />CSS</li>
+							</ul>
+						</div>
+						<div class="b3-wrapper__block">
+							<h3> Tools & frameworks </h3>
+							<ul class="b3-grid-responsive__3-column">
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=dotnet" />.NET&nbsp;/ ASP.NET + EF&nbsp;Core</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=visualstudio" />Visual Studio</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=vscode" />Visual Studio Code</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=git" />Git </li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=github" />Github</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=react" />React.js</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=docker" />Docker</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=figma" />Figma</li>
+							</ul>
 						</div>
 					</article>
-					<article class="b3-section-article">
-						<h3 id="header-4">My Contact</h3>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis culpa ab, laborum neque perferendis unde non amet veritatis in quaerat eius. Neque debitis quidem doloremque obcaecati rerum enim adipisci fugit.
-						</p>
+					<article class="b3-content-item b3-article-background-right">
+						<h2>Looking to improve my skills in...<hr></h2>
+						<div class="b3-wrapper__block">
+							<ul class="b3-grid-responsive__3-column">
+								<li><img class="b3-size-square-m" src="https://raw.githubusercontent.com/tandpfun/skill-icons/7f7e691e71aec64e8354bf697835e009d1ad80f8/icons/Java-Light.svg" />Java</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=ts" />TypeScript</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=vite" />Vite</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=graphql" />GraphQL</li>
+								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=gitlab" />Gitlab</li>
+							</ul>
+						</div>
+					</article>
+					<article class="b3-content-item b3-article-background-right">
+						<h2>Don't hesitate to reach out!<hr></h2>
+						<div class="b3-wrapper__block">
+							<p>Find me on these sites:</p>
+							<ul class="b3-grid-responsive__3-column">
+
+							</ul>
+						</div>
 					</article>
 				</section>
 			</main>
@@ -104,7 +121,7 @@
 				<div class="b3-footer-logo-wrapper">
 
 				</div>
-				<ul class="b3-flex-list-colrow style-plain">
+				<ul class="b3-flex-list-colrow style-none">
 					<li>
 						<a class="b3-link-external" href="https://github.com/blubeatbee/">
 							<i class="fa fa-github fa-lg"></i>
