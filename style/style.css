@@ -20,7 +20,6 @@ a {
 body {
 	color: var(--c-text-1);
 	background-color: var(--c-background-2);
-	width: 100%;
 }
 button {
 	border-radius: 0;
@@ -60,7 +59,6 @@ p {
 	font-family: var(--f-family-text);
 	font-size: var(--f-size-m);
 	font-weight: var(--f-weight-regular);
-	overflow-wrap: break-word;
 }
 ul, ol { list-style: none; }
 
@@ -73,13 +71,10 @@ header.active {
 	transition: background-color 0.3s;
 	background-color: var(--c-primar-50);
 }
-
-.b3-wrapper__block {
-	padding: var(--space-8) 0;
-}
-.b3-wrapper__inline {
-	padding: 0 var(--space-8);
-}
+.b3-margin__block { margin-block: var(--space-8); }
+.b3-margin__inline { margin-inline: var(--space-15); }
+.b3-wrapper__block { padding-block: var(--space-8); }
+.b3-wrapper__inline { padding-inline: var(--space-15); }
 
 .hover-gradient-bottom:hover {
 	background: linear-gradient(to top, var(--c-second-alpha-33), var(--c-second-alpha-00));
@@ -97,12 +92,12 @@ div.link-hover-highlight:hover { color: var(--c-text-1); }
 ul.link-style-plain, ol.link-style-plain { text-decoration: none; }
 
 
-.b3-line-height-m  { line-height: 1.0rem; }
-.b3-line-height-l  { line-height: 1.2rem; }
-.b3-line-height-xl { line-height: 1.4rem; }
-.b3-line-height-2l { line-height: 1.6rem; }
-.b3-line-height-3l { line-height: 1.8rem; }
-.b3-line-height-4l { line-height: 2.0rem; }
+.b3-outline-icon { 
+	outline: 2px solid var(--c-menu-background);
+	border-radius: 10px;
+}
+
+.b3-font-color-d { color: var(--c-text-1); }
 .b3-font-size-xs { font-size: var(--f-size-xs); }
 .b3-font-size-s  { font-size: var(--f-size-s); }
 .b3-font-size-m  { font-size: var(--f-size-m); }
@@ -111,12 +106,19 @@ ul.link-style-plain, ol.link-style-plain { text-decoration: none; }
 .b3-font-size-2l { font-size: var(--f-size-xxl); }
 .b3-font-size-3l { font-size: var(--f-size-xxxl); }
 .b3-font-size-4l { font-size: var(--f-size-xxxxl); }
+.b3-font-size-larger  { font-size: larger; }
+.b3-font-size-smaller { font-size: smaller; }
 .b3-font-weight-light   { font-weight: var(--f-weight-light); }
 .b3-font-weight-regular { font-weight: var(--f-weight-regular); }
 .b3-font-weight-medium  { font-weight: var(--f-weight-medium); }
 .b3-font-weight-bold    { font-weight: var(--f-weight-bold); }
-.b3-font-weight-bolder  { font-weight: var(--f-weight-bolder); }
-
+.b3-font-weight-black   { font-weight: var(--f-weight-bolder); }
+.b3-line-height-m  { line-height: 1.0rem; }
+.b3-line-height-l  { line-height: 1.2rem; }
+.b3-line-height-xl { line-height: 1.4rem; }
+.b3-line-height-2l { line-height: 1.6rem; }
+.b3-line-height-3l { line-height: 1.8rem; }
+.b3-line-height-4l { line-height: 2.0rem; }
 .b3-size-square-2s { width: 16px; height: 16px; }
 .b3-size-square-xs { width: 24px; height: 24px; }
 .b3-size-square-s  { width: 32px; height: 32px; }
@@ -130,7 +132,6 @@ ul.link-style-plain, ol.link-style-plain { text-decoration: none; }
 a.style-none { text-decoration: none;}
 ul.style-none, ol.style-none { list-style: none; }
 
-.b3-style-text-larger { font-size: larger; }
 p.style-text-xxxxl, i.style-text-xxxxl { font-size: var(--f-size-xxxxl); }
 p.style-text-xxxl, i.style-text-xxxl { font-size: var(--f-size-xxxl); }
 p.style-text-xxl, i.style-text-xxl {font-size: var(--f-size-xxl); }
@@ -148,21 +149,30 @@ h4.b3-hr,
 h5.b3-hr,
 h6.b3-hr { border-bottom: 0.1rem solid currentColor; }
 
-.b3-link, .b3-link-external {
+.b3-link, 
+.b3-link__external, 
+.b3-link__underline,
+.b3-link__underline-external {
 	align-items: center;
 	gap: 0.2rem;
 	max-width: max-content;
 }
-.b3-link:hover, 
-.b3-link-external:hover, 
-.b3-link:active, 
-.b3-link-external:active { color: var(--c-highlight-dark); }
-.b3-link-external:after {
-	display: inline-block;
-	font: 14px/1 FontAwesome;
-	content: "\f08e\200b"/" (external)";
+.b3-link__underline, .b3-link__underline-external {
+	text-decoration: underline;
 }
-
+.b3-link__external:after, .b3-link__underline-external:after {
+	display: inline-block;
+	content: "\f08e\200b"/" (external)";
+	font: 14px/1 FontAwesome;
+}
+.b3-link:active, 
+.b3-link:hover, 
+.b3-link__external:active, 
+.b3-link__external:hover, 
+.b3-link__underline:active, 
+.b3-link__underline:hover, 
+.b3-link__underline-external:active, 
+.b3-link__underline-external:hover { color: var(--c-highlight-dark); }
 
 header.position-sticky {
 	position: sticky;
