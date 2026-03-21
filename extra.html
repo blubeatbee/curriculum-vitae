@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/style/layout.css" />
+	<link rel="stylesheet" href="/style/easter-egg.css" />
+	<link rel="stylesheet" href="/style/print.css" />
+	<script src="/scripts/script.js" defer></script>
+	
+	<title>Resume | blubeatbee</title>
+</head>
+<body class="b3-theme-dark">
+	<ul class="b3-skip-menu">
+		<li><a href="#main-content"> Skip to main content </a></li>
+	</ul>
+	<div class="b3-layout-page" id="">
+		<!--Header-->
+		<header id="header-bar" class="b3-layout-page-item b3-header-sticky inactive">
+			<!--Navigation menu-->
+			<nav class="b3-navigation">
+				<button id="secret-1" class="b3-button-square" onclick="activateEasterEgg1()"></button>
+				<ul class="b3-nav-menu">
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="index.html">Home</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="portfolio.html">Portfolio</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="contact.html">Contact</a></li>
+					<li class="style-inert"><a href="#extra.html" inert>Resumé</a></li>
+				</ul>
+				<button id="button-nav-menu" class="b3-button-square" onclick="openNavMenu()">
+					<i class="fa fa-bars b3-font-size-4l"></i>
+				</button>
+			</nav>
+		</header>
+
+		<!--Main-->
+		<div class="b3-layout-page-item b3-layout-content b3-background__main" id="main-content">
+			<!--Content-->
+			<main class="b3-layout-content-main">
+				<!--Content header-->
+				<section class="b3-layout-content-header">
+					<article>
+						<div class="b3-hero-grid">
+							<div class="b3-hero-content">
+								<h1 class="b3-hr b3-font-family__serif">Resumé</h1>
+							</div>
+						</div>
+					</article>
+				</section>
+
+				<!--Content body-->
+				<section class="b3-content-section b3-layout-content-body">
+					<article>
+						<embed 
+						type="application/pdf"
+						src="resources/AC_en_resume.pdf" 
+						alt="A PDF-file of my resume"
+						class="b3-embed" 
+						/>
+					</article>
+				</section>
+			</main>
+		</div>
+
+		<!--Footer-->
+		<footer id="footer" class="b3-layout-page-item b3-footer">
+			<section class="b3-footer-section">
+				<input 
+					type="text" 
+					id="secret-2" 
+					name="secret-2" 
+					size="4" 
+					maxlength="4" 
+					placeholder="Code"
+					onfocus="easterEgg2()"
+				/>
+			</section>
+			<section class="b3-footer-section">
+				<p class="b3-font-size-xs">
+					&copy; 2026 bluebeatbee
+					<br>
+					Background image by 
+					<a class="b3-link__underline-external" href="https://unsplash.com/@ianjbattaglia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+						Ian Battaglia
+					</a> 
+					and used under the 
+					<a class="b3-link__underline-external" href="https://unsplash.com/license">
+						Unsplash License
+					</a>
+				</p> 
+			</section>
+		</footer>
+	</div>
+
+	<!--Modal easter egg 2-->
+	<dialog id="modal" class="b3-modal" closedby="any">
+		<div class="b3-flex-col b3-modal-container">
+			<div class="b3-img-wrapper__4-3 b3-modal-img">
+				<img src="/images/Berdly_overworld.png" class="" />
+			</div>
+		</div>
+		<form method="dialog">
+			<button class="b3-modal-close fa fa-times"></button>
+		</form>
+	</dialog>
+</body>
+</html>

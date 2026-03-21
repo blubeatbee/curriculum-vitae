@@ -68,18 +68,16 @@ function openNavMenu() {
 };
 
 
-// Contact page: copy contact info to clipboard
+// Copy info to clipboard
 function copyToClipboard(type) {
 	switch(type) {
 		case 'phone':
-			navigator.clipboard.writeText("+46760070698");
+			navigator.clipboard.writeText("phone");
 			console.log("Phone number copied to clipboard.");
-			alert("Phone number copied to clipboard.");
 			break;
 		case 'email':
-			navigator.clipboard.writeText("alexcoh19@outlook.com");
+			navigator.clipboard.writeText("email");
 			console.log("Email address copied to clipboard.");
-			alert("Email address copied to clipboard.");
 			break;
 		default:
 			console.log("Failed to copy to clipboard.");

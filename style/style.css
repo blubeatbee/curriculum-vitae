@@ -148,6 +148,13 @@ ul.link-style-plain, ol.link-style-plain { text-decoration: none; }
 	border-radius: 10px;
 }
 
+.b3-embed {
+	width: 100%;
+	height: 50vw;
+	max-height: 90vh;
+	min-height: 500px;
+}
+
 .b3-font-color-d { color: var(--c-text-1); }
 .b3-font-color-letter { color: var(--c-primar-50); }
 

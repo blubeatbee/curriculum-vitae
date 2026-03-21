@@ -103,7 +103,9 @@
 }
 .b3-grid-responsive__col-wide {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+	/* high min-column size also increases screen min-width, making smaller screens widths 
+	unable to display certain parts of the screen */
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	gap: var(--space-8) var(--space-4);
 }
 .b3-col__span-1 {
