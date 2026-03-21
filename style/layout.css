@@ -27,10 +27,10 @@
 	position: fixed;
 	height: var(--height-banner);
 	width: 100%;
-	/* background: url("/images/github_banner_blubeatbee.svg") no-repeat center; */
+	/* background: url("../images/github_banner_blubeatbee.svg") no-repeat center; */
 }
 .b3-banner {
-	background: url("/images/banner.svg") no-repeat center;
+	background: url("../images/banner.svg") no-repeat center;
 	height: 100%;
 	width: 100%;
 }
@@ -361,7 +361,7 @@
 	padding: var(--space-10);
 	overflow-wrap: anywhere;
 	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-	url("/images/ian-battaglia-9drS5E_Rguc-unsplash.jpg") center / cover no-repeat;
+	url("../images/ian-battaglia-9drS5E_Rguc-unsplash.jpg") center / cover no-repeat;
 }
 .b3-hero-wrapper {
 	min-width: 164px;
@@ -373,7 +373,7 @@
 	border-radius: 500vw;
 	box-shadow: inset 0 0 1.6px 4px var(--c-white-alpha-33);
 	content: linear-gradient(rgba(60, 120, 164, 0.5), rgba(20, 20, 20, 0.7));
-	background: url("/images/profile.jpg") center 36% / 120% no-repeat var(--c-menu-background);
+	background: url("../images/profile.jpg") center 36% / 120% no-repeat var(--c-menu-background);
 	height: 100%;
 	width: 100%;
 }
