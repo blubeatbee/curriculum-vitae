@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/style/layout.css" />
 	<link rel="stylesheet" href="/style/easter-egg.css" />
+	<link rel="stylesheet" href="/style/print.css" />
 	<script src="/scripts/script.js" defer></script>
 	
 	<title>Home | blubeatbee</title>
@@ -22,12 +23,12 @@
 		<header id="header-bar" class="b3-layout-page-item b3-header-sticky inactive">
 			<!--Navigation menu-->
 			<nav class="b3-navigation">
-				<button id="button-secret-1" class="b3-button-square" onclick="activateEasterEgg1()"></button>
+				<button id="secret-1" class="b3-button-square" onclick="activateEasterEgg1()"></button>
 				<ul class="b3-nav-menu">
-					<li class="style-inert"><a class="style-none" href="index.html" inert>Home</a></li>
-					<li class="hover-gradient-bottom link-hover-highlight"><a class="style-none" href="portfolio.html">Portfolio</a></li>
-					<li class="hover-gradient-bottom link-hover-highlight"><a class="style-none" href="contact.html">Contact</a></li>
-					<li class="hover-gradient-bottom link-hover-highlight"><a class="style-none" href="#">Page 4</a></li>
+					<li class="style-inert"><a href="index.html" inert>Home</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="portfolio.html">Portfolio</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="contact.html">Contact</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="#">Page 4</a></li>
 				</ul>
 				<button id="button-nav-menu" class="b3-button-square" onclick="openNavMenu()">
 					<i class="fa fa-bars b3-font-size-4l"></i>
@@ -36,45 +37,56 @@
 		</header>
 		
 		<!--Main-->
-		<div class="b3-layout-page-item b3-layout-content">
+		<div class="b3-layout-page-item b3-layout-content b3-background__main" id="main-content">
 			<!--Content-->
-			<main class="b3-layout-content-main" id="main-content">
+			<main class="b3-layout-content-main">
 				<!--Content header-->
-				<section class="b3-layout-content-main-header b3-flex-hero">
-					<div class="b3-hero-wrapper">
-						<img class="b3-hero-image"/>
-					</div>
-					<div class="b3-hero-content b3-wrapper__inline">
-						<h1 class="b3-font-weight-bold b3-hr">
-							<span class="b3-font-weight-black" style="font-weight: 400;">A</span>lex
-						</h1>
-						<h2 class="b3-font-size-xl b3-font-weight-bold">
-							Web & server developer
-						</h2>
-						<p>
-							Check out my work
-						</p>
-					</div>
-				</section>
-				
-				<!--Content body-->
-				<section class="b3-layout-content-main-body b3-content-section">
-
-					<article class="b3-container-background-left">
-						<h2 id="header-2" class="b3-line-height-2l">
-							<b class="b3-font-size-larger">B</b>orn to Frontend,
+				<section class="b3-layout-content-header">
+					<article class="b3-hero-grid">
+						<div class="b3-hero-wrapper">
+							<img class="b3-hero-image"/>
+						</div>
+						<div class="b3-hero-content b3-wrapper__inline">
+							<h1 class="b3-hr">
+								<span class="b3-hero-pre-title">Hi, call me</span>
+								<span class="b3-hero-title-cap">A</span><span class="b3-hero-title">LEX</span>
+							</h1>
+							<h2 class="b3-hero-subtitle">
+								Web & Server Developer
+							</h2>
 							<br>
-							<b class="b3-font-size-larger">F</b>orced to Backend.
+							<p> Check out my work </p>
+							<br>
+							<a class="b3-button__rect b3-button-color__yellow" href="portfolio.html">
+								To Portfolio
+							</a>
+						</div>
+					</article>
+				</section>
+				<!--Content body-->
+				<section class="b3-layout-content-body b3-content-section">
+					<article class="b3-container-background-left">
+						<h2 class="b3-hr">
+							<b class="b3-font-size-4l">A</b>bout me
 						</h2>
 						<p>
 							Nerd, programmer, and peruser of documentation.
+							<br>
+							Alex is a jack-of-all-trades developer based in Stockholm, having 
+							competency in building web servers, interactive user interfaces and 
+							everything in-between.
+							<br>
+							A frequent Hackathon participator, he likes to learn and adapt to 
+							new skills.
 						</p>
 					</article>
 					<article>
-						<h2 class="b3-hr">My Skillset</h2>
+						<h2 class="b3-hr">
+							<b class="b3-font-size-4l">M</b>y Skillset
+						</h2>
 						<div class="b3-wrapper__block">
 							<h3> Languages </h3>
-							<ul class="b3-grid-responsive__3-column">
+							<ul class="b3-grid-responsive__col-medium b3-list__rows">
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=cs" />C&#35;</li>
 								<li><img class="b3-size-square-m b3-outline-icon" src="https://skills.syvixor.com/api/icons?i=sql" />T-SQL</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=mysql" />MySQL</li>
@@ -88,12 +100,11 @@
 						</div>
 						<div class="b3-wrapper__block">
 							<h3> Tools & frameworks </h3>
-							<ul class="b3-grid-responsive__3-column">
+							<ul class="b3-grid-responsive__col-medium b3-list__rows">
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=git" />Git </li>
-								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=github" />Github</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=dotnet" />.NET&nbsp;&#47; ASP.NET</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=visualstudio" />Visual Studio</li>
-								<li><img class="b3-size-square-m" src="https://skills.syvixor.com/api/icons?i=sqlserver" />SQL Server</li>
+								<li><img class="b3-size-square-m b3-outline-icon" src="https://skills.syvixor.com/api/icons?i=sqlserver" />SQL Server</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=vscode" />Visual Studio Code</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=react" />React.js</li>
 								<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=docker" />Docker</li>
@@ -102,8 +113,8 @@
 						</div>
 						<div class="b3-container-background-right b3-margin__block">
 							<div class="b3-wrapper__block">
-								<h3>Looking to improve&hellip;</h3>
-								<ul class="b3-grid-responsive__3-column">
+								<h3>Looking to learn&hellip;</h3>
+								<ul class="b3-grid-responsive__col-medium b3-list__rows">
 									<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=ts" />TypeScript</li>
 									<li><img class="b3-size-square-m" src="https://raw.githubusercontent.com/tandpfun/skill-icons/7f7e691e71aec64e8354bf697835e009d1ad80f8/icons/Java-Light.svg" />Java</li>
 									<li><img class="b3-size-square-m" src="https://skillicons.dev/icons?i=graphql" />GraphQL</li>
@@ -112,23 +123,13 @@
 						</div>
 					</article>
 					<article class="b3-container-background-left">
-						<h2 class="b3-hr">Want to reach out?</h2>
-						<p class="b3-font-size-larger">Come find me at:</p>
+						<h2 class="b3-hr">
+							<b class="b3-font-size-4l">L</b>et's reach out!
+						</h2>
 						<div class="b3-wrapper__block">
-							<ul class="b3-grid-responsive__3-column">
-								<li>
-									<a class="b3-link__external" href="https://github.com/bluebeatbee">
-										<i class="fa fa-github fa-lg"></i>
-										<u>Github</u>
-									</a>
-								</li>
-								<li>
-									<a class="b3-link__external" href="https://www.linkedin.com/in/alex1998">
-										<i class="fa fa-linkedin-square fa-lg"></i>
-										<u>LinkedIn</u>
-									</a>
-								</li>
-							</ul>
+							<a class="b3-button__rect b3-button-color__blue b3-font-size-s" href="contact.html">
+								To Contact
+							</a>
 						</div>
 					</article>
 				</section>
@@ -136,22 +137,41 @@
 		</div>
 
 		<!--Footer-->
-		<footer id="footer" class="b3-layout-page-item b3-layout-footer">
-			<div class="b3-layout-footer-item ">
+		<footer id="footer" class="b3-layout-page-item b3-footer" >
+			<section class="b3-footer-section">
+				<input 
+					type="text" 
+					id="secret-2" 
+					name="secret-2" 
+					size="4" 
+					maxlength="4" 
+					placeholder="Code"
+					onfocus="easterEgg2()"
+				/>
+			</section>
+			<section class="b3-footer-section">
 				<p class="b3-font-size-xs">
 					&copy; 2026 bluebeatbee
 					<br>
 					Background image by 
-					<a class="b3-link__external" href="https://unsplash.com/@ianjbattaglia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-						<u>Ian Battaglia</u>
-					</a> 
+					<a class="b3-link__underline-external" href="https://unsplash.com/@ianjbattaglia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ian Battaglia</a> 
 					and used under the 
-					<a class="b3-link__external" href="https://unsplash.com/license">
-						<u>Unsplash License</u>
-					</a>
-				</p> 
-			</div>
+					<a class="b3-link__underline-external" href="https://unsplash.com/license">Unsplash License</a>
+				</p>
+			</section>
 		</footer>
 	</div>
+
+	<!--Modal easter egg 2-->
+	<dialog id="modal" class="b3-modal" closedby="any">
+		<div class="b3-flex-col b3-modal-container">
+			<div class="b3-img-wrapper__4-3 b3-modal-img">
+				<img src="/images/Berdly_overworld.png" class="" />
+			</div>
+		</div>
+		<form method="dialog">
+			<button class="b3-modal-close fa fa-times"></button>
+		</form>
+	</dialog>
 </body>
 </html>

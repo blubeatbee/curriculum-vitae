@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/style/layout.css" />
+	<link rel="stylesheet" href="/style/easter-egg.css" />
+	<script src="/scripts/script.js" defer></script>
+	
+	<title>Portfolio | blubeatbee</title>
+</head>
+<body class="b3-theme-dark">
+	<ul class="b3-skip-menu">
+		<li><a href="#main-content"> Skip to main content </a></li>
+	</ul>
+	<div class="b3-layout-page" id="">
+		<!--Header-->
+		<header id="header-bar" class="b3-layout-page-item b3-header-sticky inactive">
+			<!--Navigation menu-->
+			<nav class="b3-navigation">
+				<button id="secret-1" class="b3-button-square" onclick="activateEasterEgg1()"></button>
+				<ul class="b3-nav-menu">
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="index.html">Home</a></li>
+					<li class="style-inert"><a href="portfolio.html" inert>Portfolio</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="contact.html">Contact</a></li>
+					<li class="hover-gradient-bottom link-hover-highlight"><a href="#">Page 4</a></li>
+				</ul>
+				<button id="button-nav-menu" class="b3-button-square" onclick="openNavMenu()">
+					<i class="fa fa-bars b3-font-size-4l"></i>
+				</button>
+			</nav>
+		</header>
+
+		<!--Main-->
+		<div class="b3-layout-page-item b3-layout-content__1-sidebar b3-background__main" id="main-content">
+			<!--Content-->
+			<main class="b3-layout-content-main">
+				<!--Content header-->
+				<section class="b3-layout-content-header">
+					<article>
+						<div class="b3-hero-grid">
+							<div class="b3-hero-content">
+								<h1 class="b3-hr b3-font-family__serif">Portfolio</h1>
+							</div>
+						</div>
+						<div class="b3-wrapper__block-inline b3-wrapper">
+							<p> 
+								Here's a non-exhaustive list of works I've contributed to, or participated in.
+								Currently work-in-progress: more to come!
+							</p>
+						</div>
+					</article>
+				</section>
+
+				<!--Table of contents panel-->
+				<div class="b3-layout-content-main-toc b3-toc-wrapper">
+					<aside class="b3-toc">
+						<h2 class="b3-toc-header">Page Contents</h2>
+						<nav class="b3-toc-body">
+							<ol class="style-none link-hover-underline">
+								<li><a href="">Title</a></li>
+								<li><a href="#project-1">Votémon</a></li>
+								<li><a href="#more-to-come">More to come&hellip;</a></li>
+							</ol>
+						</nav>
+					</aside>
+				</div>
+
+				<!--Content body-->
+				<section class="b3-content-section b3-layout-content-body">
+					<article class="b3-container-background-left">
+						<h2 class="b3-hr" id="project-1">Votémon</h2>
+						<div class="b3-flex-col b3-wrapper__block">
+							<div class="b3-img-wrapper__16-9 b3-outline-icon">
+								<img id="project-1-img" src="/images/portfolio/project_1-1.png" alt="Image of the Votémon website, a project I've contributed to."/>
+							</div>
+							<div class="b3-block-limit">
+								<div class="b3-margin__block">
+									<p id="project-1-description">
+										Votémon is a web game, similar to Scrandle, where an user gets to pick which out of two Pokémons
+										they like more. 
+										<br> 
+										This fan-made project came about during a Hackathon on January 30th, 
+										and since then my team and I have been contributing here and there. 
+										Currently not functioning...
+										<br><br>
+										This project is not affiliated with Nintendo or GameFreak, and we don't claim any 
+										ownership over the copyright.
+									</p>
+								</div>
+								<div class="b3-grid-responsive__col-medium">
+									<div class="b3-margin__block">
+										<h3>Credit</h3>
+										<ul id="project-1-credit" class="b3-grid__1-column b3-list__rows b3-font-family__sans b3-list-style__disc">
+											<li>Alex</li>
+											<li>Patrik</li>
+											<li>Veronica</li>
+											<li>Sheyma</li>
+										</ul>
+									</div>
+									<div class="b3-margin__block">
+										<h3>Link</h3>
+										<ul id="project-1-links" class="b3-grid__1-column b3-list__rows b3-font-family__sans b3-list-style__disc">
+											<li>
+												<a class="b3-link__external style-underline" href="https://votemon.pabu.dev/">Website</a>
+											</li>
+											<li>
+												<a class="b3-link__external style-underline" href="https://github.com/chas-hack-team-saturn/votemon/">Github Repo</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="b3-wrapper__block">
+							<button class="b3-button__rect b3-button-color__blue" onclick="openPortfolioModal(1)">
+								Read more&hellip;
+							</button>
+						</div>
+					</article>
+
+					<article>
+						<h2 class="b3-hr" id="more-to-come">More to come&hellip;</h2>
+						
+
+					</article>
+				</section>
+			</main>
+		</div>
+
+		<!--Footer-->
+		<footer id="footer" class="b3-layout-page-item b3-footer">
+			<section class="b3-footer-section">
+				<input 
+					type="text" 
+					id="secret-2" 
+					name="secret-2" 
+					size="4" 
+					maxlength="4" 
+					placeholder="Code"
+					onfocus="easterEgg2()"
+				/>
+			</section>
+			<section class="b3-footer-section">
+				<p class="b3-font-size-xs">
+					&copy; 2026 bluebeatbee
+					<br>
+					Background image by 
+					<a class="b3-link__underline-external" href="https://unsplash.com/@ianjbattaglia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+						Ian Battaglia
+					</a> 
+					and used under the 
+					<a class="b3-link__underline-external" href="https://unsplash.com/license">
+						Unsplash License
+					</a>
+				</p> 
+			</section>
+		</footer>
+	</div>
+
+	<!--Portfolio Modal-->
+	<dialog id="portfolio-modal" class="b3-modal" closedby="any">
+		<div class="b3-flex-col b3-modal-container">
+			<div class="b3-img-wrapper__16-9 b3-modal-img">
+				<img id="modal-img"/>
+			</div>
+			<div class="b3-wrapper__inline b3-flex-col">
+				<div class="b3-wrapper__block b3-flex-col">
+					<h1 id="modal-title" class="b3-hr b3-font-weight-bold">Placeholder</h1>
+					<p id="modal-description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis omnis ullam doloremque quas ipsam sed qui sunt itaque soluta quibusdam incidunt laborum et corrupti dolore, vel esse, animi recusandae!
+					</p>
+				</div>
+				<div class="b3-wrapper__block b3-grid-responsive__col-medium">
+					<div class="b3-flex-col b3-list__rows">
+						<h2 class="b3-font-weight-medium">Credit</h2>
+						<ul id="modal-credit" 
+						class="b3-grid__1-column b3-list__rows b3-font-family__sans b3-list-style__disc"
+						>
+						</ul>
+					</div>
+					<div class="b3-flex-col b3-list__rows">
+						<h2 class="b3-font-weight-medium">Links</h2>
+						<ul id="modal-links"
+						class="b3-grid__1-column b3-list__rows b3-font-family__sans b3-list-style__disc" 
+						>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<form method="dialog">
+			<button class="b3-modal-close fa fa-times"></button>
+		</form>
+	</dialog>
+
+	<!--Modal easter egg 2-->
+	<dialog id="modal" class="b3-modal" closedby="any">
+		<div class="b3-flex-col b3-modal-container">
+			<div class="b3-img-wrapper__4-3 b3-modal-img">
+				<img src="/images/Berdly_overworld.png" class="" />
+			</div>
+		</div>
+		<form method="dialog">
+			<button class="b3-modal-close fa fa-times"></button>
+		</form>
+	</dialog>
+</body>
+</html>

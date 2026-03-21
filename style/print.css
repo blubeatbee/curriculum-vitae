@@ -1,0 +1,21 @@
+@media print {
+	#header-bar,
+	/* #footer, */
+	aside,
+	dialog,
+	.b3-skip-menu,
+	.b3-banner-wrapper,
+	.b3-sidebar {
+		display: none !important;
+	}
+	#footer {
+		position: absolute;
+		bottom: 0;
+	}
+	.b3-after-banner {
+		top: 0;
+	}
+	.b3-hero-grid {
+		print-color-adjust: exact;
+	}
+}
