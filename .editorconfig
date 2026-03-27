@@ -1,0 +1,24 @@
+# EditorConfig helps to enforce a consistent coding style for every developer
+# working on the same project regardless of their choice of software tool.
+#
+# Visual Studio Code requires an extension for EditorConfig to work.
+# Download the extension:
+# https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
+# Stop the editor from looking for .editorconfig files in the parent directories
+root = true
+
+[*]
+# Non-configurable Prettier behaviors
+charset = utf-8
+insert_final_newline = true
+
+# Configurable Prettier behaviors
+# (change these if your Prettier config differs)
+end_of_line = lf
+indent_style = space
+indent_size = 2
+tab_width = 2
+# Sets the maximum amount of char on a single line
+max_line_length = 180
+trim_trailing_whitespace = true
