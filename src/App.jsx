@@ -1,18 +1,24 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
 import "./App.css";
-import Navigation from "./components/elements/Navigation/Navigation.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { Header } from "./components/collections/Header/Header.jsx";
+import PageHome from "./pages/PageHome.jsx";
+import PagePortfolio from "./pages/PagePortfolio.jsx";
+import PageContact from "./pages/PageContact.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <header id="header-bar" class>
-        <Navigation />
-      </header>
-      <Outlet />
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="" element={<PageHome />}></Route>
+        <Route exact path="/portfolio" element={<PagePortfolio />}></Route>
+        <Route exact path="/contact" element={<PageContact />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

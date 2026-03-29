@@ -1,8 +1,7 @@
-import "../../../styles/layout.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
@@ -10,13 +9,13 @@ export default function Navigation() {
         <button className="b3-button-square"></button>
         <ul className="b3-nav-menu">
           <li className="b3-nav-menu-link hover-gradient-bottom link-hover-highlight">
-            <NavLink to="">Home</NavLink>
+            <Link to="/">Home</Link>
           </li>
           <li className="b3-nav-menu-link hover-gradient-bottom link-hover-highlight">
-            <NavLink to="portfolio">Portfolio</NavLink>
+            <Link to="portfolio">Portfolio</Link>
           </li>
           <li className="b3-nav-menu-link hover-gradient-bottom link-hover-highlight">
-            <NavLink to="contact">Contact</NavLink>
+            <Link to="contact">Contact</Link>
           </li>
         </ul>
         <button className="b3-button-square">

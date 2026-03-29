@@ -1,3 +1,7 @@
+@import url("./styles/layout.css");
+@import url("./styles/print.css");
+@import url("./styles/easter-egg.css");
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

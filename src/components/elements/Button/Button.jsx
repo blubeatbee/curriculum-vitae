@@ -1,5 +1,3 @@
-import "../../../styles/layout.css";
-
 export function Button() {
   return (
     <>
@@ -7,5 +5,3 @@ export function Button() {
     </>
   );
 }
-
-

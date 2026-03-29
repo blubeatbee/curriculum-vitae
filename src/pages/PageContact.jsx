@@ -1,6 +1,4 @@
-
 export default function PageContact() {
-
   return (
     <>
       <title>Contact | blubeatbee</title>
