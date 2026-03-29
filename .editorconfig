@@ -18,7 +18,25 @@ insert_final_newline = true
 end_of_line = lf
 indent_style = space
 indent_size = 2
-tab_width = 2
-# Sets the maximum amount of char on a single line
-max_line_length = 180
 trim_trailing_whitespace = true
+
+# HTML, CSS, JavaScript and TypeScript Files
+[*.{html,css,js,jsx,ts,tsx,svg}]
+max_line_length = 100
+
+# Markdown Files
+[*.{md,mdx}]
+trim_trailing_whitespace = false
+indent_size = 4
+
+# Batch Files
+[*.{cmd,bat}]
+end_of_line = crlf
+
+# Bash Files
+[*.sh]
+end_of_line = lf
+
+# Makefiles
+[Makefile]
+indent_style = tab
